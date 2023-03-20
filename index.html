@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- <script src="app.js"></script> -->
+  <title>Document</title>
+</head>
+<body>
+  <div class="title">
+    <p>공감 비 공감</p>
+  </div>
+  
+
+  <button onclick="openModal()" id="btn-modal"><a class="button" href="#">&nbsp;현실&nbsp;</a></button>
+
+  <button onclick="openModal()" ><a class="button2" href="#">&nbsp;&nbsp;공감&nbsp;&nbsp;</a></button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    
+    <div class="container">
+      <div class="contact-box">
+        
+        <div class="left"></div>
+        <div class="right">
+          <h2>Contact Us <span class="close" onclick="closeModal()">&times;</span></h2>
+          <input type="text" class="field" placeholder="Your Name">
+          <input type="text" class="field" placeholder="Your Email">
+          <input type="text" class="field" placeholder="Phone">
+          <textarea style="resize: none;" placeholder="Message" class="field"></textarea>
+          <button class="btn">Send</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    // Close the modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+  </script>
+
+
+</body>
+
+</html>
